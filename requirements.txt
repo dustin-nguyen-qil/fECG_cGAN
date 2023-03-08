@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+pyedflib
+scikit-learn
+torch
+torchvision
+tensorboard
+padasip
