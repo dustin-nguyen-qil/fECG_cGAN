@@ -1,1 +1,0 @@
-The code for HFQRS will be available in a future release
