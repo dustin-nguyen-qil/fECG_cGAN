@@ -3,6 +3,7 @@ from scipy import signal
 import matplotlib.pyplot as plt
 from utils.DataUtils import DataUtils
 from Processing import spectrogram
+from SignalPreProcessing import normalize
 
 def main():
   data = ['adbecg', 'nifecg', 'synt_ecg']
@@ -26,7 +27,7 @@ def main():
     record_signal = data_utils.open_record(record)
     for chn in range(0, len(record_signal.getSampleFrequencies())):
       print('Reading channel: {}'.format(record_signal.getSignalLabels()[chn]))
-      _signal = record_signal.readSignal(chn)
+      _signal = normalize(record_signal.readSignal(chn))
       
       segments = []
       segments_index = 0
