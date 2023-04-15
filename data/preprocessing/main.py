@@ -29,7 +29,7 @@ def main():
     # metadata = [] # create an empty list to store the metadata for each record
 
     for record in adbecg:
-        if record.endswith('r01.edf') or record.endswith('r04.edf'):
+        if record.endswith('r01.edf') or record.endswith('r04.edf') or record.endswith('r07.edf'):
             continue
         record_id = (record.split('/')[-1][1:3])
         print(f"Reading record {record_id}")
@@ -37,9 +37,6 @@ def main():
         # record_segments = {record_id: {'abdominal': {}, 'fetal': {}}}
 
         for chn in range(0, len(record_signal.getSampleFrequencies())):
-            if record.endswith('r07.edf'):
-                if chn == 0:
-                    continue
             channel_name = record_signal.getSignalLabels()[chn]
             print('Reading channel: {}'.format(record_signal.getSignalLabels()[chn]))
             _signal = normalize(record_signal.readSignal(chn))

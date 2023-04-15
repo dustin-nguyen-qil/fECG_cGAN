@@ -1,6 +1,6 @@
-# Fetal ECG Extraction on Time-Frequency Domain using AutoEncoder
+# Fetal ECG Extraction on Time-Frequency Domain using Conditional GAN
 
-This repository contains code and data for implementing a method to extract fetal electrocardiogram (ECG) signals from a maternal ECG signal on the time-frequency domain using AutoEncoders.
+This repository contains code and data for implementing a method to extract fetal electrocardiogram (ECG) signals from a maternal ECG signal on the time-frequency domain using Conditional GANs.
 
 ## 1. Background
 
@@ -16,68 +16,6 @@ In this repository, we present a method for fetal ECG extraction on the time-fre
 ```
 ├───adbecg   
 ├───nifecg
-└───synt_ecg
-    ├───images
-    ├───sub01
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub02
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub03
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub04
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub05
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub06
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub07
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub08
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    ├───sub09
-    │   ├───snr00dB
-    │   ├───snr03dB
-    │   ├───snr06dB
-    │   ├───snr09dB
-    │   └───snr12dB
-    └───sub10
-        ├───snr00dB
-        ├───snr03dB
-        ├───snr06dB
-        ├───snr09dB
-        └───snr12dB
 ```
 - `models/`: contains the checkpoints
 - `src/`: contains scripts for training and testing the GAN model
