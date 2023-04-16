@@ -33,7 +33,7 @@ def main():
       segments_index = 0
       for i in range(0, len(_signal) - segment_size, segment_size - overlap_size):
         segments.append(_signal[i:i+segment_size] * window)
-        plt.specgram(segments[0], Fs=1000, window=window, noverlap=overlap_size, NFFT=250)  # 250ms segment size
+        plt.specgram(segments[i], Fs=1000, window=window, noverlap=overlap_size, NFFT=250)  # 250ms segment size
         plt.savefig(f"{record}_{record_signal.getSignalLabels()[chn]}_{segments_index}.png")
         segments_index += 1
 
