@@ -31,8 +31,8 @@ $ conda activate p2p
 
 Download or clone the repository:
 
-```python
-git clone [https link to my repository]
+```bash
+$ git clone https://github.com/dustin-nguyen-qil/fECG_cGAN.git
 ```
 
 ### 3.2 Data Preparation
