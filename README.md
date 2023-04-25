@@ -48,7 +48,7 @@ $ python data/preprocessing/main.py
 ```
 Then move the generated spectrograms to folder A and B for training Pix2Pix by running 
 ```bash
-$ python data/prepare.py
+$ python data/preprocessing/prepare.py
 ```
 Pix2Pix requires to align the data to each pair of images 
 ```bash
