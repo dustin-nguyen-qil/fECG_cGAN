@@ -64,7 +64,7 @@ Run the following command for training
 $ python train.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB
 ```
 
-Training results will be saved in `checkpoints`. To see more intermediate results, check out `./checkpoints/facades_pix2pix/web/index.html`
+Training results will be saved in `checkpoints`. To see more intermediate results, check out `./checkpoints/fecg_p2p/web/index.html`
 
 ### 3.3 Testing Pix2Pix
 
@@ -74,7 +74,7 @@ Run the following command for testing
 $ python test.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB
 ```
 
-The test results will be saved to a html file here: `./results/facades_pix2pix/test_latest/index.html`.
+The test results will be saved to a html file here: `./results/fecg_p2p/test_latest/index.html`.
 
 To see comparison results with Conventional Method, refer to `evaluate.ipynb` to directly see the results or run the code cells again if needed.
 
