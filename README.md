@@ -55,7 +55,6 @@ Pix2Pix requires to align the data for pairs of training images
 ```bash
 $ python datasets/combine_A_and_B.py --fold_A data/adbecg/spectrogram/A --fold_B data/adbecg/spectrogram/A --fold_AB datasets/adbecg
 ```
-<<<<<<< HEAD
 
 ### 3.3 Training Pix2Pix
 
@@ -67,38 +66,11 @@ Run the following command for training
 
 Run the following command for training
 
->>>>>>> d0f2cf758b53c7b011b716dbfe84a3a9692217ad
 ```bash
 $ python train.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB
 ```
 
 Training results will be saved in `checkpoints`. To see more intermediate results, check out `./checkpoints/fecg_p2p/web/index.html`
-<<<<<<< HEAD
-
-### 3.3 Testing Pix2Pix
-
-Run the following command for testing
-
-```bash
-$ python test.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB
-```
-
-The test results will be saved to a html file here: `./results/fecg_p2p/test_latest/index.html`.
-
-To see comparison results with Conventional Method, refer to `evaluate.ipynb` to directly see the results.
-If you want to run the code cells again, download the fECG spectrograms produced by conventional method from [here](https://uofh-my.sharepoint.com/:u:/g/personal/dnguy222_cougarnet_uh_edu/EQ2o2injDp9BjFag7zLFeoMB76fMKRBU3bFRsY85vkhi-Q?e=2A3MeZ). Then unzip and put the data into
-
-```
-results
----> fecg_p2p
-    ---> spectrogram_conventional
-    ---> test_latest
-```
-
-## Acknowledgement
-
-This repository was based on the following repository: [Pix2PixGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We would like to thank the authors for a contributing work.
-=======
 
 ### 3.3 Testing Pix2Pix
 
@@ -124,4 +96,3 @@ results
 
 This repository was based on the following repository: [Pix2PixGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We would like to thank the authors for a contributing work.
 
->>>>>>> d0f2cf758b53c7b011b716dbfe84a3a9692217ad
