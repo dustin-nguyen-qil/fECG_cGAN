@@ -76,7 +76,14 @@ $ python test.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --
 
 The test results will be saved to a html file here: `./results/fecg_p2p/test_latest/index.html`.
 
-To see comparison results with Conventional Method, refer to `evaluate.ipynb` to directly see the results or run the code cells again if needed.
+To see comparison results with Conventional Method, refer to `evaluate.ipynb` to directly see the results.
+If you want to run the code cells again, download the fECG spectrograms produced by conventional method from [here](https://uofh-my.sharepoint.com/:u:/g/personal/dnguy222_cougarnet_uh_edu/EQ2o2injDp9BjFag7zLFeoMB76fMKRBU3bFRsY85vkhi-Q?e=2A3MeZ). Then unzip and put the data into
+
+```
+results
+---> fecg_p2p
+    ---> spectrogram_conventional
+```
 
 ## Acknowledgement
 
