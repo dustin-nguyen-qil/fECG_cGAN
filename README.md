@@ -6,11 +6,11 @@ The presentation of the project can be watched [here](https://youtu.be/UaDcA1xhb
 
 ## 1 Background
 
-Fetal ECG extraction from maternal ECG signals is important in clinical settings, as it can provide crucial information about fetal health. However, fetal ECG signals are typically much weaker than maternal ECG signals, making it challenging to extract them directly from the raw signal. One approach is to first convert the signal into the time-frequency domain using a spectrogram, and then use image processing techniques to extract the fetal ECG signal from the spectrogram.
+Fetal ECG extraction from maternal ECG signals is important in clinical settings, as it can provide crucial information about fetal health. However, fetal ECG signals are typically much weaker than maternal ECG signals, making it challenging to extract them directly from the raw signal. 
 
 ## 2 Method
 
-In this repository, we present a method for fetal ECG extraction on the time-frequency domain using Pix2Pix GAN. We train Pix2Pix to learn the mapping between maternal ECG spectrograms (domain A) and corresponding fetal ECG spectrograms (domain B). During testing, we apply the trained Pix2Pix to a maternal ECG spectrogram to obtain the corresponding fetal ECG spectrogram, and then use image processing techniques to extract the fetal ECG signal from the spectrogram.
+In this repository, we present a method for fetal ECG extraction on the time-frequency domain using Pix2Pix GAN. We train Pix2Pix to learn the mapping between maternal ECG spectrograms (domain A) and corresponding fetal ECG spectrograms (domain B). During testing, we apply the trained Pix2Pix to a maternal ECG spectrogram to obtain the corresponding fetal ECG spectrogram.
 
 ## 3 Running instructions
 
