@@ -47,7 +47,6 @@ $ pip install -r requirements.txt
 ```
 data
 ---> adbecg
----> preprocessing
 ---> ...
 ```
 
@@ -55,12 +54,6 @@ Pix2Pix requires to align the data for pairs of training images
 ```bash
 $ python datasets/combine_A_and_B.py --fold_A data/adbecg/spectrogram/A --fold_B data/adbecg/spectrogram/A --fold_AB datasets/adbecg
 ```
-
-### 3.3 Training Pix2Pix
-
-Run the following command for training
-
-=======
 
 ### 3.3 Training Pix2Pix
 
