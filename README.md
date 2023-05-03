@@ -1,8 +1,8 @@
 # Fetal ECG Extraction on Time-Frequency Domain using Pix2Pix GAN
 
-This repository contains code and data for implementing a method to extract fetal electrocardiogram (ECG) signals from a maternal ECG signal on the time-frequency domain using Pix2Pix GAN.
+### The presentation of the project can be watched [here](https://youtu.be/UaDcA1xhbZI)
 
-The presentation of the project can be watched [here](https://youtu.be/UaDcA1xhbZI)
+This repository contains code and data for implementing a method to extract fetal electrocardiogram (ECG) signals from a maternal ECG signal on the time-frequency domain using Pix2Pix GAN.
 
 ## 1 Background
 
