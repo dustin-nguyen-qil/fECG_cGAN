@@ -1,7 +1,5 @@
 # Fetal ECG Extraction on Time-Frequency Domain using Pix2Pix GAN
 
-### The presentation of the project can be watched [here](https://youtu.be/UaDcA1xhbZI)
-
 This repository contains code and data for implementing a method to extract fetal electrocardiogram (ECG) signals from a maternal ECG signal on the time-frequency domain using Pix2Pix GAN.
 
 ## 1 Background
@@ -20,11 +18,11 @@ In this repository, we present a method for fetal ECG extraction on the time-fre
 
 First, create a virtual environment for the repository
 ```bash
-$ conda create -n fecg python=3.8
+conda create -n fecg python=3.8
 ```
 then activate the environment 
 ```bash
-$ conda activate fecg
+conda activate fecg
 ```
 
 
@@ -33,12 +31,12 @@ $ conda activate fecg
 Download or clone the repository:
 
 ```bash
-$ git clone https://github.com/dustin-nguyen-qil/fECG_cGAN.git
+git clone https://github.com/dustin-nguyen-qil/fECG_cGAN.git
 ```
 Next, install the dependencies by running
 ...
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Evaluation results
@@ -58,7 +56,7 @@ results
 ### 3.2 Data Preparation
 
 #### Dataset 
-- Download the spectrograms generated from Abdominal and Direct dataset from [here](https://uofh-my.sharepoint.com/:u:/g/personal/dnguy222_cougarnet_uh_edu/EftKBDNDgtlCmx4PClYJcogB42zOuQZOmCdeH9F2rOd_Ug?e=wgu81y)
+- Download the spectrograms generated from Abdominal and Direct dataset from [here](https://uofh-my.sharepoint.com/:u:/g/personal/dnguy222_cougarnet_uh_edu/EftKBDNDgtlCmx4PClYJcogB42zOuQZOmCdeH9F2rOd_Ug?e=wgu81y).
 - Unzip the data, put into folder `data` as following
 ```
 data
@@ -76,7 +74,7 @@ $ python datasets/combine_A_and_B.py --fold_A data/adbecg/spectrogram/A --fold_B
 Run the following command for training (here I set `--n_epochs 5` and `--n_epochs_decay 5` to save training time if you only want to validate the training phase works fine)
 
 ```bash
-$ python train.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB --n_epochs 5 --n_epochs_decay 5
+python train.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB --n_epochs 5 --n_epochs_decay 5
 ```
 
 Training results will be saved in `checkpoints`. To see more intermediate results, check out `./checkpoints/fecg_p2p/web/index.html`
@@ -88,7 +86,7 @@ If you have download the results from [here](https://uofh-my.sharepoint.com/:u:/
 Run the following command for testing
 
 ```bash
-$ python test.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB
+python test.py --dataroot ./datasets/adbecg --name fecg_p2p --model pix2pix --direction AtoB
 ```
 
 The test results will be saved to a html file here: `./results/fecg_p2p/test_latest/index.html`.
